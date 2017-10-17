@@ -1,0 +1,223 @@
+body{
+	font-size: 0.32rem;
+	background: #EBEBEB;
+}
+
+.pull-left {
+  float: left;
+}
+.pull-right {
+  float: right;
+}
+
+.clearfix {
+  &:after,
+  &:before {
+    content: " ";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+// 字体大小
+.font-12{
+   font-size: .24rem; 
+}
+.font-14{
+   font-size: .28rem; 
+}
+.font-16{
+   font-size: .32rem; 
+}
+.font-18{
+   font-size: .36rem; 
+}
+.font-22{
+   font-size: .44rem; 
+}
+.color-danger{
+	color: #FB6155 !important;
+}
+.font-bold{
+	font-weight: bold;
+}
+
+.pay-header{
+	display: flex;
+	background: #393A3F;
+	color: #fff;
+	padding: .2rem .3rem;
+}
+.pay-header-close{
+	flex: 1;
+}
+.pay-header-close-link{
+	display: inline-block;
+	width: .4rem;
+	height: .4rem;
+	background: url(../images/icon-close.png) no-repeat center;
+	background-size: .4rem;	
+}
+.pay-header-title{
+	flex: 2;
+	text-align: center;
+}
+.pay-header-hide{
+	flex: 1;
+}
+.pay-money-box{
+	position: relative;	
+	margin: 0 .4rem;
+}
+.pay-money-input{
+	border: .02rem solid #ACACAC;
+	background: #fff;		
+	width: 100%;
+	padding: .3rem 1rem;
+	font-size: .44rem;
+	border-radius: .16rem;
+	color: #333;
+}
+.pay-money-box>span{
+	position: absolute;
+	z-index: 100;
+	font-size: .36rem;
+}
+.pay-money-box>span.pay-money-sym{
+	top: .35rem;
+	right: 0;
+	margin-right: .2rem;	
+}
+.pay-money-box>span.pay-money-tip{
+	top: .35rem;
+	margin-left: .2rem;
+	left: 0;
+	color: #999;
+}
+.pay-tech{
+	font-size: .28rem;
+	color: #999;
+	margin: .4rem 0;
+}
+
+.pay-vender{
+	color: #333;
+	font-size: .36rem;
+	font-weight: bold;
+	width: 80%;
+	margin: .4rem auto;
+}
+.pay-vender-name{
+	margin-top: .2rem;
+}
+.icon-vender{
+	vertical-align: middle;
+	display: inline-block;
+	width: 1.2rem;
+	height: 1.2rem;
+	background: url(../images/vender-green.png) no-repeat center;
+	background-size: 1.2rem;
+}
+
+.pay-cfm-box{
+	padding: .3rem .3rem 0;
+	margin-bottom: .4rem;
+}
+.btn{
+	display: inline-block;
+  	width: 100%;
+  	border-radius: .1rem;
+  	text-align: center;
+  	padding: .3rem .3rem;
+  	text-decoration: none;
+  	outline: none;  	
+  	border: .02rem solid #C5C5C7;
+	background: #fff;
+	color: #333;
+}
+.btn-success{
+	background: #09BD04;
+	border: none;
+	color: #fff;
+}
+.btn-disabled{
+	background: #BFE1BE;
+	border: none;
+	color: #fff;
+}
+.btn-primary{
+	background: #3D82E1;
+	border: none;
+	color: #fff;
+}
+
+/*支付结果*/
+.pay-status-main{
+	background: #fff;
+	margin: .3rem;
+	border-radius: .06rem;
+}
+
+.pay-status-img{
+	width: 2rem;
+	height: 2rem;
+	background-size: 2rem !important;
+	display: inline-block;
+}
+.pay-status-success{
+	background: url(../images/icon-success.png) no-repeat center;
+}
+.pay-status-fault{
+	background: url(../images/icon-fault.png) no-repeat center;
+}
+.pay-status-pic-box{
+	padding: .3rem 0;
+}
+.pay-status-text{
+	font-weight: bold;
+	font-size: .36rem;
+	color: #333;
+	margin-top: .1rem;
+}
+.pay-status-bill{
+	padding: .2rem .3rem;
+	font-size: .28rem;
+}
+.pay-status-item{
+	display: flex;
+	line-height: .48rem;
+}
+.pay-status-item>label{
+	flex: 1;
+	color: #999;
+}
+.pay-status-item>span{
+	flex: 1;
+	text-align: right;
+	color: #333;
+}
+.pay-status-btn-box{
+	display: flex;
+	padding: 0 .3rem;
+	margin: .4rem 0;
+}
+.pay-status-btn-box>a{
+	flex: 1;
+	text-align: center;
+}
+.pay-status-btn-box>a:first-child{
+	margin-right: .2rem;
+}
